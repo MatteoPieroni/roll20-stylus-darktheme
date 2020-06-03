@@ -1,0 +1,263 @@
+:root {
+    --main-dark: #222831;
+    --clearer-dark: #393e46;
+    --evidence: #d65a31;
+    --text: #eee;
+    --dark-text: #393e46;
+}
+
+input[type="checkbox"]:not(.sheet-display-flag):not(.sheet-options-flag):not(.sheet-inventorysubflag) {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    background-color: var(--clearer-dark) !important;
+    border: 1px solid var(--main-dark) !important;
+    /*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05) !important;*/
+    padding: 5px !important;
+    border-radius: 3px !important;
+    display: inline-block !important;
+    position: relative !important;
+}
+
+input[type="checkbox"]:not(.sheet-display-flag):not(.sheet-inventorysubflag):active,
+input[type="checkbox"]:not(.sheet-display-flag):not(.sheet-inventorysubflag):checked:active {
+    /*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1) !important;*/
+}
+
+input[type="checkbox"]:not(.sheet-display-flag):not(.sheet-inventorysubflag):checked {
+    background-color: var(--main-dark) !important;
+    border: 1px solid var(--main-dark) !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1) !important;
+    color: var(--text) !important;
+}
+input[type="checkbox"]:not(.sheet-display-flag):not(.sheet-inventorysubflag):checked:after {
+    content: '\2714' !important;
+    font-size: 14px !important;
+    position: absolute !important;
+    top: -3px !important;
+    left: -1px !important;
+    color: var(--text) !important;
+}
+
+.ui-dialog {
+    background: var(--main-dark) !important;
+}
+
+.content.bio {
+    color: var(--text);
+}
+
+.sheet-page {
+    background: var(--main-dark);
+    color: var(--text);
+}
+
+.charsheet .sheet-coin {
+    background: var(--clearer-dark);
+    color: var(--text);
+}
+
+.charsheet .sheet-attacks .sheet-display input,
+.charsheet .sheet-tool .sheet-display input,
+.charsheet .sheet-equipment .sheet-item input,
+.charsheet .sheet-attacks .sheet-display span,
+.charsheet .sheet-tool .sheet-display span,
+.charsheet .sheet-equipment .sheet-item span,
+.charsheet .sheet-proficiencies .sheet-display span,
+.charsheet .sheet-textbox textarea {
+    background: transparent !important;
+    border-bottom: 1px solid var(--clearer-dark);
+    color: var(--text);
+}
+
+.charsheet .sheet-insp-prof-container .sheet-value input,
+.charsheet .sheet-saving-throw input[type=text],
+.charsheet .sheet-skill input[type=text],
+.charsheet .sheet-ac-init-speed-container input,
+.charsheet .sheet-hp input,
+.charsheet .sheet-hdice-dsaves-container input[type=text],
+.charsheet .sheet-hdice-dsaves-container input[type=number],
+.charsheet .sheet-attacks input,
+.charsheet .sheet-equipment input,
+.charsheet .sheet-tool input,
+.charsheet .sheet-proficiencies input,
+.charsheet .sheet-pc .sheet-traits input,
+.charsheet .sheet-spell input,
+.charsheet .sheet-options .sheet-body input,
+.charsheet .sheet-resources input[type=number] {
+    color: var(--text);
+}
+
+.charsheet .sheet-attr-container button[type=roll],
+.charsheet .sheet-saving-throw button[type=roll],
+.charsheet .sheet-skill button[type=roll],
+.charsheet .sheet-ac-init-speed-container button[type=roll],
+.charsheet .sheet-subcontainer button[type=roll],
+.charsheet .sheet-npc button[type=roll] {
+    color: var(--text);
+}
+
+.charsheet .sheet-traits .sheet-display .sheet-title {
+    color: var(--evidence);
+}
+
+.charsheet .repcontrol .btn:before,
+.charsheet .repcontrol .btn:after {
+    background-color: var(--clearer-dark) !important;
+    color: var(--text) !important;
+}
+
+.charsheet .sheet-advantagetoggle input[type=radio] + span,
+.sheet-tab-button + span {
+    background-color: var(--clearer-dark) !important;
+    color: var(--text) !important;
+}
+
+.charsheet .sheet-advantagetoggle input[type=radio]:checked + span,
+.charsheet input[type=radio].sheet-tab-button:checked + span {
+    background: var(--evidence) !important;
+    color: var(--dark-text) !important;
+}
+
+.sheet-value {
+    background: var(--clearer-dark) !important;
+}
+
+.charsheet .sheet-insp-prof-container .sheet-value input[type=checkbox]:checked ~ span {
+    color: var(--text) !important;
+}
+
+.charsheet .sheet-attr-container input {
+    color: var(--dark-text);
+}
+
+.charsheet .sheet-saving-throw button[type=roll],
+.charsheet .sheet-skill button[type=roll] {
+    color: var(--text);
+}
+
+.sheet-attr-mod {
+    background: var(--clearer-dark) !important;
+}
+
+.charsheet .sheet-finalattr {
+    color: var(--text);
+}
+
+select {
+    background: var(--clearer-dark);
+    color: var(--text);
+}
+
+.charsheet .sheet-hp .sheet-top input,
+.charsheet .sheet-hdice-dsaves-container .sheet-top input[type=text] {
+    color: var(--text);
+}
+
+.charsheet .sheet-header input,
+.charsheet .sheet-header select {
+    color: var(--text);
+}
+
+.charsheet .sheet-insp-prof-container .sheet-value input[type=checkbox] ~ span {
+    filter: invert(1)
+}
+
+
+/**
+* CHAT
+*/
+#rightsidebar,
+.textchatcontainer {
+    background-color: var(--main-dark) !important;
+    color: var(--text) !important;
+}
+
+.textchatcontainer .message {
+    background: var(--main-dark);
+}
+
+.textchatcontainer .message.system,
+.textchatcontainer .message.system .spacer {
+    background: var(--evidence);
+    color: var(--main-dark) !important;
+}
+
+.textchatcontainer .message.system a {
+    color: var(--main-dark) !important;
+}
+
+.textchatcontainer .message.you {
+    border-top: 1px solid var(--evidence);
+    border-bottom: 1px solid var(--evidence);
+    background: var(--main-dark);
+}
+
+.textchatcontainer .message.you + .message.you {
+    border-top: none;
+}
+
+.textchatcontainer .message .spacer,
+.textchatcontainer .message.you .spacer {
+    background: var(--clearer-dark);
+}
+
+.textchatcontainer .formula,
+.textchatcontainer .rolled {
+    background: var(--clearer-dark);
+    color: var(--text);
+}
+
+.sheet-rolltemplate-atk .sheet-container,
+.sheet-rolltemplate-atkdmg .sheet-container.sheet-atk,
+.sheet-rolltemplate-dmg .sheet-atk,
+.sheet-rolltemplate-atk .sheet-desc,
+.sheet-rolltemplate-atkdmg .sheet-desc,
+.sheet-rolltemplate-dmg .sheet-desc,
+.sheet-rolltemplate-desc .sheet-desc,
+.sheet-rolltemplate-simple .sheet-result,
+.sheet-rolltemplate-atk .sheet-result,
+.sheet-rolltemplate-atkdmg .sheet-result,
+.sheet-rolltemplate-dmg .sheet-result,
+.charsheet .sheet-npc .sheet-subtitle .sheet-italics,
+.sheet-rolltemplate-simple .sheet-label,
+.sheet-rolltemplate-atk .sheet-label,
+.sheet-rolltemplate-atkdmg .sheet-label,
+.sheet-rolltemplate-dmg .sheet-label,
+.sheet-rolltemplate-simple .sheet-charname span,
+.sheet-rolltemplate-atk .sheet-charname span,
+.sheet-rolltemplate-dmg .sheet-charname span,
+.sheet-rolltemplate-atkdmg .sheet-charname span,
+.sheet-rolltemplate-simple .sheet-container,
+.sheet-rolltemplate-traits {
+    background: var(--clearer-dark);
+    color: var(--text);
+}
+
+.sheet-rolltemplate-traits .sheet-header {
+    color: var(--evidence);
+}
+
+.ui-widget-content a {
+    color: var(--evidence);
+}
+
+.sheet-rolltemplate-atk a[href^="~"] {
+    color: var(--text);
+}
+
+#textchat-input {
+    border-top: 1px solid var(--main-dark);
+    background-color: var(--main-dark);
+    color: var(--text);
+}
+
+#textchat-input textarea {
+    background: var(--clearer-dark);
+    color: var(--text);
+}
+
+#textchat-input button {
+    border: none;
+    background: var(--evidence);
+    color: var(--text);
+}
